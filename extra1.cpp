@@ -18,19 +18,10 @@ Node* getIntersectionNode(Node* headA, Node* headB) {
         p2 = (p2 == NULL) ? headA : p2->next;
     }
 
-    return p1; // either intersection node or NULL
-}
-
-// Helper to print result
-void printIntersection(Node* node) {
-    if (node)
-        cout << "Intersection Node: " << node->data << endl;
-    else
-        cout << "No Intersection" << endl;
+    return p1;
 }
 
 int main() {
-    // Creating example lists
     Node* common = new Node(8);
     common->next = new Node(5);
 
@@ -47,8 +38,10 @@ int main() {
     headB->next->next->next = common;
 
     Node* intersection = getIntersectionNode(headA, headB);
-    printIntersection(intersection);
+    if(intersection) cout << intersection->data << endl;
+    else cout << "no intersection." << endl;
 
     return 0;
 }
+
 
