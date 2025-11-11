@@ -18,7 +18,6 @@ public:
         head = NULL;
     }
 
-    // Insert at end
     void insertEnd(int val) {
         Node* newNode = new Node(val);
         if (head == NULL) {
@@ -32,7 +31,6 @@ public:
         temp->next = newNode;
     }
 
-    // Find and print middle element
     void findMiddle() {
         if (head == NULL) {
             cout << "List is empty." << endl;
@@ -42,7 +40,6 @@ public:
         Node* slow = head;
         Node* fast = head;
 
-        // Move fast by 2 steps, slow by 1 step
         while (fast != NULL && fast->next != NULL) {
             slow = slow->next;
             fast = fast->next->next;
@@ -51,7 +48,6 @@ public:
         cout << "Middle element: " << slow->data << endl;
     }
 
-    // Display list
     void display() {
         Node* temp = head;
         while (temp != NULL) {
@@ -81,4 +77,5 @@ int main() {
 
     return 0;
 }
+
 
