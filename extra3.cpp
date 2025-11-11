@@ -51,7 +51,7 @@ public:
                 return slow; // Start node of loop
             }
         }
-        return NULL; // No loop
+        return NULL; 
     }
 
     // Remove loop
@@ -97,11 +97,12 @@ int main() {
     else
         cout << "No Loop detected." << endl;
 
-    list.removeLoop();  // Removes loop
+    list.removeLoop();  
 
     cout << "Linked List after loop removal: ";
     list.display();
 
     return 0;
 }
+
 
