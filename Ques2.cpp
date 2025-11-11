@@ -72,7 +72,7 @@ class List{
 };
 int main() {
     List l1;
-    // Input list: 1->2->1->2->1->3->1
+    
     l1.insertEnd(1);
     l1.insertEnd(2);
     l1.insertEnd(1);
@@ -91,3 +91,4 @@ int main() {
 
     return 0;
 }
+
