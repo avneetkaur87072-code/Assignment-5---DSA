@@ -18,7 +18,6 @@ public:
         head = NULL;
     }
 
-    // Insert at end
     void insertEnd(int val) {
         Node* newNode = new Node(val);
         if (head == NULL) {
@@ -32,7 +31,6 @@ public:
         temp->next = newNode;
     }
 
-    // Reverse the linked list
     void reverse() {                          
         Node* prev = NULL;                     
         Node* curr = head;          
@@ -48,7 +46,6 @@ public:
         head = prev; // new head is last node
     }
 
-    // Display list
     void display() {
         Node* temp = head;
         while (temp != NULL) {
@@ -63,7 +60,6 @@ public:
 int main() {
     LinkedList l;
 
-    // Input: 1->2->3->4->5
     l.insertEnd(1);
     l.insertEnd(2);
     l.insertEnd(3);
@@ -80,4 +76,5 @@ int main() {
 
     return 0;
 }
+
 
