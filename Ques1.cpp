@@ -155,30 +155,6 @@ class List{
 			}
 			return false;
 		}
-		
-//		
-//	    void deleteNode(int val){
-//	    	if(head == NULL) return;
-//	    	
-//	    	if (head->data == val) {
-//        Node* toDelete = head;
-//        head = head->next;
-//        delete toDelete;
-//        return;
-//    }
-//	    	
-//	    	Node* temp = head;
-//	    	while(temp->next!=NULL && temp->next->data != val){
-//	    		temp = temp->next;
-//			}
-//			
-//			if(temp->next->data == val){
-//				Node* curr = temp->next->next;
-//				Node* nothing = temp->next;
-//				temp->next = curr;
-//				delete nothing;
-//			}
-//		}
 	    
 		void display(){
 			if(head == NULL){
@@ -209,10 +185,10 @@ int main(){
     l1.deleteBegin();
     l1.deleteEnd();
     l1.deleteSpecificNode(6);
-//    l1.deleteNode(3);
     cout << "After deletions : "<< endl;
     l1.display();
     
 	return 0;
 }
+
 
